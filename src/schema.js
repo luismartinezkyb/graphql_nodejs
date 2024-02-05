@@ -2,7 +2,8 @@ import { makeExecutableSchema } from 'graphql-tools'
 import { resolvers } from "./resolvers.js";
 const typeDefs = `
   type Query{
-    hello: String
+    hello: String,
+    greet(name: String!): String
   }
 `;
 
