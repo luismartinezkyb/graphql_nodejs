@@ -19,7 +19,8 @@ const typeDefs = `
     number: Int,
   }
   type Mutation {
-    createTask(task: TaskInput): Task
+    createTask(task: TaskInput): Task,
+    upadateTask(taskId: String,task: TaskInput ): Task
   }
 `;
 

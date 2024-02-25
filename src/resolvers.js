@@ -23,6 +23,14 @@ export const resolvers = {
       }
       tasks.push(taskCreated)
       return taskCreated;
-    }
+    },
+    // updateTask(_, {taskId, task}){
+    //   const findedTask = tasks.find(task=>task.id===taskId)
+
+    //   if(!findedTask) return null;
+
+    //   findedTask = {...task}
+    //   return findedTask;
+    // }
   }
 }
