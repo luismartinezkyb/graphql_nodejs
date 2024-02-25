@@ -15,7 +15,10 @@ const PORT = 3000;
 
 app.use('/api/', graphqlHTTP({
   graphiql: true,
-  schema
+  schema,
+  context: {
+    messageId: 'test'
+  }
 }))
 
 app.listen(PORT, ()=>console.log(`app listening on port ${PORT}`))
